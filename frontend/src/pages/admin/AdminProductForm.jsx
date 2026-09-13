@@ -1,3 +1,5 @@
+// This is the admin product form page, used for both creating and editing products
+import { uploadImage } from '../../services/api';
 import { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import {
@@ -75,6 +77,7 @@ export default function AdminProductForm() {
   const [loading, setLoading] = useState(isEdit);
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState('');
+  const [uploading, setUploading] = useState(false);
 
   useEffect(() => {
     fetchCategories().then(setCategories);
@@ -105,6 +108,24 @@ export default function AdminProductForm() {
     set('category', cat._id);
     setNewCategoryName('');
   };
+
+  const handleImageUpload = async (e) => {
+  const file = e.target.files[0];
+  if (!file) return;
+  setUploading(true);
+  try {
+    const url = await uploadImage(file);
+    setForm((f) => ({
+      ...f,
+      images: [...f.images.filter(Boolean), url]
+    }));
+  } catch (err) {
+    setError('Image upload failed. Please try again.');
+  } finally {
+    setUploading(false);
+    e.target.value = '';
+  }
+};
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -209,10 +230,24 @@ export default function AdminProductForm() {
           </div>
         </div>
 
+        
         <div className="rounded-lg border border-ink/10 bg-white p-5 space-y-4">
-          <h2 className="font-semibold text-ink">Images</h2>
-          <ListEditor label="Image URLs (first = main image)" values={form.images} onChange={(v) => set('images', v)} placeholder="https://…" />
-        </div>
+  <h2 className="font-semibold text-ink">Images</h2>
+
+  <div>
+    <label className="block text-sm font-medium text-ink mb-1">Upload a photo</label>
+    <input
+      type="file"
+      accept="image/*"
+      onChange={handleImageUpload}
+      disabled={uploading}
+      className="block w-full text-sm text-ink/70 file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:bg-brand-700 file:text-white file:text-sm hover:file:bg-brand-800"
+    />
+    {uploading && <p className="text-sm text-brand-700 mt-1">Uploading…</p>}
+  </div>
+
+  <ListEditor label="Image URLs (first = main image)" values={form.images} onChange={(v) => set('images', v)} placeholder="https://… (or use the upload button above)" />
+</div>
 
         <div className="rounded-lg border border-ink/10 bg-white p-5 space-y-6">
           <h2 className="font-semibold text-ink">Details</h2>

@@ -47,4 +47,14 @@ export const deleteCategory = (id) => api.delete(`/categories/${id}`).then((r) =
 export const fetchAnalyticsOverview = () => api.get('/analytics/overview').then((r) => r.data);
 export const fetchClicks = (params) => api.get('/analytics/clicks', { params }).then((r) => r.data);
 
+// ---- Image upload endpoint ---- i have added this endpoint to upload images to cloudinary
+export const uploadImage = async (file) => {
+  const formData = new FormData();
+  formData.append('image', file);
+  const { data } = await api.post('/upload', formData, {
+    headers: { 'Content-Type': 'multipart/form-data' }
+  });
+  return data.url;
+};
+
 export default api;

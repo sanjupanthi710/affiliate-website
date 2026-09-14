@@ -37,9 +37,9 @@ export default function ProductCard({ product }) {
         </Link>
         <RatingStars rating={rating} reviewCount={reviewCount} />
         <div className="flex items-baseline gap-2 mt-1">
-          <span className="text-lg font-bold text-ink">${price?.toFixed(2)}</span>
+          <span className="text-lg font-bold text-ink">₹{price?.toFixed(2)}</span>
           {originalPrice > price && (
-            <span className="text-sm text-ink/40 line-through">${originalPrice.toFixed(2)}</span>
+            <span className="text-sm text-ink/40 line-through">₹{originalPrice.toFixed(2)}</span>
           )}
         </div>
         <button onClick={handleViewDeal} className="btn-primary mt-2 w-full">

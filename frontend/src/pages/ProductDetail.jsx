@@ -97,10 +97,10 @@ export default function ProductDetail() {
           <p className="mt-5 text-ink/70 leading-relaxed">{product.shortDescription}</p>
 
           <div className="mt-6 flex items-baseline gap-3">
-            <span className="text-3xl font-bold text-ink">${product.price.toFixed(2)}</span>
+            <span className="text-3xl font-bold text-ink">₹{product.price.toFixed(2)}</span>
             {product.originalPrice > product.price && (
               <>
-                <span className="text-lg text-ink/40 line-through">${product.originalPrice.toFixed(2)}</span>
+                <span className="text-lg text-ink/40 line-through">₹{product.originalPrice.toFixed(2)}</span>
                 <span className="rounded-full bg-clay/10 text-clay text-sm font-semibold px-2.5 py-1">
                   Save {product.discountPercent}%
                 </span>

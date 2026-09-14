@@ -60,7 +60,7 @@ export default function AdminProducts() {
                     <span className="font-medium text-ink">{p.name}</span>
                   </td>
                   <td className="p-3 text-ink/60">{p.category?.name || '—'}</td>
-                  <td className="p-3">${p.price?.toFixed(2)}</td>
+                  <td className="p-3">₹{p.price?.toFixed(2)}</td>
                   <td className="p-3">
                     <span className={`text-xs px-2 py-0.5 rounded-full ${
                       p.status === 'active' ? 'bg-brand-100 text-brand-800' : 'bg-ink/10 text-ink/60'

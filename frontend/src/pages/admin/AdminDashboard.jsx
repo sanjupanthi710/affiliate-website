@@ -58,7 +58,7 @@ export default function AdminDashboard() {
                   </td>
                   <td className="py-2.5">{p.clickCount}</td>
                   <td className="py-2.5">{p.viewCount}</td>
-                  <td className="py-2.5">${p.price?.toFixed(2)}</td>
+                  <td className="py-2.5">₹{p.price?.toFixed(2)}</td>
                 </tr>
               ))}
             </tbody>

@@ -17,7 +17,7 @@ export default function Deals() {
   return (
     <div className="container-page py-10">
       <Helmet>
-        <title>Today's Deals — Best Current Discounts | GlowPicks</title>
+        <title>Today's Deals — Best Current Discounts | glowPicks</title>
         <meta name="description" content="Browse today's best product deals and limited-time price drops, updated regularly." />
       </Helmet>
       <h1 className="text-2xl sm:text-3xl font-semibold text-ink mb-2">Today's Deals</h1>

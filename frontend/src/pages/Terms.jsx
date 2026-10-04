@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet-async';
 export default function Terms() {
   return (
     <div className="container-page py-14 max-w-3xl">
-      <Helmet><title>Terms of Service | GlowPicks</title></Helmet>
+      <Helmet><title>Terms of Service | glowPicks</title></Helmet>
       <h1 className="text-3xl font-semibold text-ink mb-2">Terms of Service</h1>
       <p className="text-sm text-ink/50 mb-8">Last updated: {new Date().toLocaleDateString()}</p>
 
@@ -61,7 +61,7 @@ export default function Terms() {
           <h2 className="text-xl font-semibold text-ink mb-2">5. Intellectual property</h2>
           <p>
             Unless otherwise noted, the text, layout, and original content on this Site are owned
-            by or licensed to [Site Name] and may not be copied, reproduced, or distributed
+            by or licensed to https://www.glowpicks.store/ and may not be copied, reproduced, or distributed
             without permission. Product images and names may be trademarks or property of their
             respective owners and are used for identification purposes only.
           </p>
@@ -79,7 +79,7 @@ export default function Terms() {
         <section>
           <h2 className="text-xl font-semibold text-ink mb-2">7. Limitation of liability</h2>
           <p>
-            To the fullest extent permitted by law, [Site Name] and its owners shall not be liable
+            To the fullest extent permitted by law, https://www.glowpicks.store/ and its owners shall not be liable
             for any indirect, incidental, special, consequential, or punitive damages arising out
             of or related to your use of the Site, any third-party website linked from the Site,
             or any transaction with a third-party retailer.
@@ -97,7 +97,7 @@ export default function Terms() {
 
         <section>
           <h2 className="text-xl font-semibold text-ink mb-2">9. Governing law</h2>
-          <p>These Terms are governed by the laws of [Country/State], without regard to its conflict of law provisions.</p>
+          <p>These Terms are governed by the laws of the country, without regard to its conflict of law provisions.</p>
         </section>
 
         <section>

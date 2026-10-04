@@ -6,7 +6,7 @@ import { Helmet } from 'react-helmet-async';
 export default function PrivacyPolicy() {
   return (
     <div className="container-page py-14 max-w-3xl">
-      <Helmet><title>Privacy Policy | GlowPicks</title></Helmet>
+      <Helmet><title>Privacy Policy | glowPicks</title></Helmet>
       <h1 className="text-3xl font-semibold text-ink mb-2">Privacy Policy</h1>
       <p className="text-sm text-ink/50 mb-8">Last updated: {new Date().toLocaleDateString()}</p>
 

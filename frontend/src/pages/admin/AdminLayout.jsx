@@ -20,7 +20,7 @@ export default function AdminLayout() {
     <div className="min-h-screen flex bg-paper">
       <aside className="w-56 shrink-0 border-r border-ink/10 bg-white flex flex-col">
         <div className="px-5 py-5 border-b border-ink/10">
-          <span className="font-display font-semibold text-ink">GlowPicks</span>
+          <span className="font-display font-semibold text-ink">glowPicks</span>
           <p className="text-xs text-ink/40">Admin panel</p>
         </div>
         <nav className="flex-1 px-3 py-4 space-y-1">

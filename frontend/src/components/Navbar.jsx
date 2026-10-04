@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import SearchBar from './SearchBar';
 
-const SITE_NAME = import.meta.env.VITE_SITE_NAME || 'GlowPicks';
+const SITE_NAME = import.meta.env.VITE_SITE_NAME || 'glowPicks';
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);

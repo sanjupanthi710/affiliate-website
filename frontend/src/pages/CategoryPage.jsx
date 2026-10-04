@@ -39,7 +39,7 @@ export default function CategoryPage() {
   return (
     <div className="container-page py-10">
       <Helmet>
-        <title>{category.name} — Best {category.name} Picks & Deals | GlowPicks</title>
+        <title>{category.name} — Best {category.name} Picks & Deals | glowPicks</title>
         <meta name="description" content={category.description || `Compare top-rated ${category.name.toLowerCase()} products and find the best price.`} />
       </Helmet>
 

@@ -13,7 +13,7 @@ export default function Contact() {
 
   return (
     <div className="container-page py-14 max-w-xl">
-      <Helmet><title>Contact Us | BestPicks</title></Helmet>
+      <Helmet><title>Contact Us | GlowPicks</title></Helmet>
       <h1 className="text-3xl font-semibold text-ink mb-3">Contact Us</h1>
       <p className="text-ink/60 mb-8">Have a question about a product, a partnership idea, or found something wrong on the site? Send us a note.</p>
 

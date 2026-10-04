@@ -1,4 +1,4 @@
-# BestPicks — Affiliate Marketing Website (MERN Stack)
+# GlowPicks — Affiliate Marketing Website (MERN Stack)
 
 A full-featured, responsive affiliate marketing website: browse and compare products,
 click through to your real affiliate links, and manage everything from a built-in

@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet-async';
 export default function AffiliateDisclosure() {
   return (
     <div className="container-page py-14 max-w-3xl">
-      <Helmet><title>Affiliate Disclosure | BestPicks</title></Helmet>
+      <Helmet><title>Affiliate Disclosure | GlowPicks</title></Helmet>
       <h1 className="text-3xl font-semibold text-ink mb-2">Affiliate Disclosure</h1>
       <p className="text-sm text-ink/50 mb-8">Last updated: {new Date().toLocaleDateString()}</p>
 

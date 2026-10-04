@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-const SITE_NAME = import.meta.env.VITE_SITE_NAME || 'BestPicks';
+const SITE_NAME = import.meta.env.VITE_SITE_NAME || 'GlowPicks';
 
 export default function Footer() {
   return (

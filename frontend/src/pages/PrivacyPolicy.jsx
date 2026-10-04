@@ -6,14 +6,14 @@ import { Helmet } from 'react-helmet-async';
 export default function PrivacyPolicy() {
   return (
     <div className="container-page py-14 max-w-3xl">
-      <Helmet><title>Privacy Policy | BestPicks</title></Helmet>
+      <Helmet><title>Privacy Policy | GlowPicks</title></Helmet>
       <h1 className="text-3xl font-semibold text-ink mb-2">Privacy Policy</h1>
       <p className="text-sm text-ink/50 mb-8">Last updated: {new Date().toLocaleDateString()}</p>
 
       <div className="text-ink/80 leading-relaxed space-y-6">
         <p>
-          This Privacy Policy describes how [Site Name] ("we," "us," or "our") collects, uses,
-          and discloses information when you visit our website (the "Site"). By using the Site,
+          This Privacy Policy describes how https://www.glowpicks.store/ ("we," "us," or "our") collects, uses,
+          and discloses information when you visit our website https://www.glowpicks.store/. By using the Site,
           you agree to the collection and use of information in accordance with this policy.
         </p>
 

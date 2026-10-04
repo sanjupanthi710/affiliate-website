@@ -46,7 +46,7 @@ export default function SearchResults() {
   return (
     <div className="container-page py-10">
       <Helmet>
-        <title>{query ? `"${query}" — Search results` : 'Browse products'} | BestPicks</title>
+        <title>{query ? `"${query}" — Search results` : 'Browse products'} | GlowPicks</title>
         <meta name="description" content="Search and filter our full product catalog by category, price and rating." />
       </Helmet>
 

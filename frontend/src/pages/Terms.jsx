@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet-async';
 export default function Terms() {
   return (
     <div className="container-page py-14 max-w-3xl">
-      <Helmet><title>Terms of Service | BestPicks</title></Helmet>
+      <Helmet><title>Terms of Service | GlowPicks</title></Helmet>
       <h1 className="text-3xl font-semibold text-ink mb-2">Terms of Service</h1>
       <p className="text-sm text-ink/50 mb-8">Last updated: {new Date().toLocaleDateString()}</p>
 

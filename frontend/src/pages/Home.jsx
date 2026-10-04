@@ -55,7 +55,7 @@ export default function Home() {
   return (
     <div>
       <Helmet>
-        <title>BestPicks — Honest product picks & comparisons</title>
+        <title>GlowPicks — Honest product picks & comparisons</title>
         <meta name="description" content="Discover top-rated products, compare prices, and find today's best deals — researched so you don't have to." />
       </Helmet>
 
